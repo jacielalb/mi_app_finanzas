@@ -1,7 +1,7 @@
 import streamlit as st
 
 def render_sidebar():
-    st.sidebar.image("https://via.placeholder.com/150", use_container_width=True)
+    st.sidebar.image("app/assets/logo.png", use_container_width=True)
     st.sidebar.title("Menú")
 
     menu = st.sidebar.radio(

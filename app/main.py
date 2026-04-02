@@ -1,6 +1,10 @@
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
+
 import streamlit as st
-from app.components.sidebar import render_sidebar
-from app.pages import dashboard, registros, registrar
+from components.sidebar import render_sidebar
+from pages import dashboard, registros, registrar
 
 st.set_page_config(page_title="App Finanzas", layout="wide")
 

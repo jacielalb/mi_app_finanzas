@@ -1,1 +1,1 @@
-web: PYTHONPATH=app streamlit run app/main.py --server.port $PORT --server.address 0.0.0.0
+web: PYTHONPATH=app streamlit run /main.py --server.port $PORT --server.address 0.0.0.0

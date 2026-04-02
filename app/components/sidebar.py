@@ -1,7 +1,9 @@
+import os
 import streamlit as st
 
 def render_sidebar():
-    st.sidebar.image("app/assets/logo.png", use_container_width=True)
+    logo_path = os.path.join(os.path.dirname(__file__), "..", "assets", "logo.png")
+    st.sidebar.image(logo_path, use_container_width=True)
     st.sidebar.title("Menú")
 
     menu = st.sidebar.radio(

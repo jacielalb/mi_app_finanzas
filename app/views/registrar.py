@@ -1,8 +1,11 @@
 import streamlit as st
 from database import supabase
 from datetime import date
+from auth import require_role
+
 
 def show():
+    require_role("editor")
     st.title("Registrar movimiento")
 
     categorias_res = supabase.table("categorias").select("*").execute()
